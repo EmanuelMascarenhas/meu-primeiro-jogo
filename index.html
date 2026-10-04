@@ -5,7 +5,34 @@
     <title>Meu Primeiro Jogo Web</title>
 </head>
 <body>
-    <h1>Meu Primeiro Jogo</h1>
-    <p>O código do meu jogo vai aqui!</p>
+    <canvas id="folha" width="600" height="500"></canvas>
+
+    <script>
+        var folhaDesenho = document.getElementById("folha");
+        var areaDesenho = folhaDesenho.getContext("2d");
+
+        areaDesenho.fillStyle = '#286047';
+        areaDesenho.fillRect(0, 0, 600, 500);
+
+        areaDesenho.fillStyle = '#ffffff';
+
+        // Linha
+
+        areaDesenho.fillRect(297.5, 0, 5, 500);
+
+        // Raquete 1
+        
+        areaDesenho.fillRect(0, 30, 5, 50);
+
+        // Raquete 2
+
+        areaDesenho.fillRect(595, 350, 5, 50);
+
+        // Bola quadrada
+
+        areaDesenho.fillRect(30, 30, 10, 10);
+
+
+    </script>
 </body>
 </html>
