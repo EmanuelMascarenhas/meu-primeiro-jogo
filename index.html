@@ -11,26 +11,32 @@
         var folhaDesenho = document.getElementById("folha");
         var areaDesenho = folhaDesenho.getContext("2d");
 
+        var larguraCampo = 600;
+        var alturaCampo = 500;
+        var larguraLinha = 5;
+        var larguraBola = 5;
+        var alturaRaquete = 50;
+
         areaDesenho.fillStyle = '#286047';
-        areaDesenho.fillRect(0, 0, 600, 500);
+        areaDesenho.fillRect(0, 0, larguraCampo, alturaCampo);
 
         areaDesenho.fillStyle = '#ffffff';
 
         // Linha
 
-        areaDesenho.fillRect(297.5, 0, 5, 500);
+        areaDesenho.fillRect(larguraCampo/2 - larguraLinha/2, 0, 5, 500);
 
         // Raquete 1
         
-        areaDesenho.fillRect(0, 30, 5, 50);
+        areaDesenho.fillRect(0, 30, larguraLinha, alturaRaquete);
 
         // Raquete 2
 
-        areaDesenho.fillRect(595, 350, 5, 50);
+        areaDesenho.fillRect(larguraCampo - larguraLinha, 350, larguraLinha, alturaRaquete);
 
         // Bola quadrada
 
-        areaDesenho.fillRect(30, 30, 10, 10);
+        areaDesenho.fillRect(30, 30, larguraBola, larguraBola);
 
 
     </script>
